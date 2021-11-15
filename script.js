@@ -9,11 +9,6 @@ let result = document.querySelector(".equals-btn");
 let percentage = document.querySelector(".percent-btn")
 let sign = document.querySelector(".neg-btn");
 
-// multiplication = !multiplication;
-// division = !division;
-// addition = !addition;
-// subtraction = !subtraction;
-
 let operator;
 
 let storedNum = [];
@@ -25,10 +20,7 @@ for (let i=0; i < inputNum.length; i++) {
 }
 
 percentage.addEventListener("click", () => {
-    output.innerHTML = output.innerHTML*100;
-    // if (output.innerHTML = output.innerHTML*100;) {
-    //      output.innerHTML = output.innerHTML/100;
-    // }
+    output.innerHTML = output.innerHTML/100;
 });
 
 sign.addEventListener("click", () => {
@@ -41,11 +33,6 @@ multiplication.addEventListener("click", () => {
    storedNum.push(firstNum);
    console.log(storedNum);
    output.innerHTML = "";
-    // result.addEventListener("click", () => {
-    //     secondNum = output.innerHTML;
-    //     storedNum.push(secondNum);
-    //     output.innerHTML = storedNum.reduce((firstNum, secondNum) => firstNum * secondNum);
-    // })
 });
 
 division.addEventListener("click", () => {
@@ -54,11 +41,6 @@ division.addEventListener("click", () => {
     storedNum.push(firstNum);
     console.log(storedNum);
     output.innerHTML = "";
-    //  result.addEventListener("click", () => {
-    //      secondNum = output.innerHTML;
-    //      storedNum.push(secondNum);
-    //      output.innerHTML = storedNum.reduce((firstNum, secondNum) => firstNum / secondNum);
-    //  })
  });
 
 addition.addEventListener("click", () => {
@@ -67,11 +49,6 @@ addition.addEventListener("click", () => {
     storedNum.push(firstNum);
     console.log(storedNum);
     output.innerHTML = "";
-    //  result.addEventListener("click", () => {
-    //      secondNum = output.innerHTML;
-    //      storedNum.push(secondNum);
-    //      output.innerHTML = storedNum.reduce((firstNum, secondNum) => firstNum + secondNum);
-    //  })
  });
 
 subtraction.addEventListener("click", () => {
@@ -80,11 +57,6 @@ subtraction.addEventListener("click", () => {
     storedNum.push(firstNum);
     console.log(storedNum);
     output.innerHTML = "";
-    //  result.addEventListener("click", () => {
-    //      secondNum = output.innerHTML;
-    //      storedNum.push(secondNum);
-    //      output.innerHTML = storedNum.reduce((firstNum, secondNum) => firstNum - secondNum);
-    //  })
  });
 
 result.addEventListener("click", () => {
