@@ -1,4 +1,4 @@
-#JavaScript Calculator
+<h1>JavaScript Calculator</h1>
 
 This is a simple calculator that can perform basic operator functions.
 
